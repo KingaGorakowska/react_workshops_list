@@ -16,8 +16,6 @@ const [searchParams, setSearchParams] = useSearchParams();
 const currentPage = Number(searchParams.get("page")); 
 const {workshops, isLoading, error, total, totalPages, filters} = useWorkshops(currentPage);
 const {allWorkshops} = useAllWorkshops();
-console.log(workshops, isLoading, error, total, totalPages, filters);
-console.log(allWorkshops, "allWorkshops");
 
 const [filtersValues, setFiltersValues] = useState({
         additional: "",
@@ -36,7 +34,6 @@ const handleOnChange = (key:string,value:string|number) => {
 
 };
 
-console.log(filtersValues);
 useEffect(()=>{
     if(!searchParams.get("page")){
         setSearchParams({page:"1"})
@@ -56,7 +53,6 @@ const filteredWorkshops = useMemo(()=>{
     if(!isAnyFieldFilled)return workshops;
     return filterWorkshops(allWorkshops, filtersValues);
 },[filtersValues]);
-console.log(filteredWorkshops,"isAnyFieldFilled ----");
     return(
         <main className="container">
             <div className="row">

@@ -14,11 +14,9 @@ useEffect( ()=>{
         try {
 
             const result = await getAll();
-            console.log(result);
             setAllWorkshops(result.results);
                 
         } catch (error) {
-            console.log(error);
             setErrorMessage("Something went wrong...")
         } 
 }

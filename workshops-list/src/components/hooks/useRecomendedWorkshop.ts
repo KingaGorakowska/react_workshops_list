@@ -16,11 +16,9 @@ useEffect( ()=>{
         try {
 
             const result = await getRecommendedWorkshops();
-            console.log(result);
             setWorkshops(result.results);
                 
         } catch (error) {
-            console.log(error);
             setError("Something went wrong...")
         } finally{
             setIsLoading(false);

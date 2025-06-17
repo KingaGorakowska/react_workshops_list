@@ -1,7 +1,4 @@
 export const filterWorkshops = (workshops:any[],filters:any) => {
-    console.log(workshops);
-    console.log(filters);
-    console.log("test funkcji");
     return workshops.filter((workshop:any)=> {
 
         // const metchesAdditional = !filters.additional||workshop.additional.toLowerCase()===filters.additional.toLowerCase();

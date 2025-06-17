@@ -10,7 +10,6 @@ const FavoritePage = () => {
 
     const {favoriteWorkshops} = useSelector((state:RootState)=>state.favoriteWorkshopSlice);
     const dispatch = useDispatch();
-    console.log(favoriteWorkshops); 
     return(
         <main className="container">
           <div className="row">

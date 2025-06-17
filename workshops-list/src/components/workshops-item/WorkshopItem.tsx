@@ -15,7 +15,6 @@ interface WorkshopItemProps {
 
 const WorkshopItem : React.FC<WorkshopItemProps> = ({workshop}) => {
 
-    // console.log(props.workshop
     const dispatch = useDispatch();
     const [animate, setAnimate] = useState(false);
 
@@ -31,7 +30,6 @@ const WorkshopItem : React.FC<WorkshopItemProps> = ({workshop}) => {
     }
 
     // const addFavoriteItem = () => {
-    //     console.log("test");
     //     dispatch(addFavoriteWorkshop(workshop));
         
     // };

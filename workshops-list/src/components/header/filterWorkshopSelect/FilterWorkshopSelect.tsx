@@ -7,7 +7,6 @@ interface FilterWorkshopSelectProps{
 };
 
 const FilterWorkshopSelect :React.FC<FilterWorkshopSelectProps>= ({filters,handleOnChange}) => {
-    console.log(filters);
     return(
         <div className="filters-nav">
             {/* <select className="select-filters" onChange={(e)=>handleOnChange("additional",e.target.value)}> 

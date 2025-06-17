@@ -21,7 +21,6 @@ useEffect( ()=>{
         try {
 
             const result = await getAllWorkshops(currentPage);
-            console.log(result);
             setWorkshops(result.results);
             setTotal(result.pagination.total);
             setTotalPages(result.pagination.totalPages);
@@ -34,7 +33,6 @@ useEffect( ()=>{
             });
             
         } catch (error) {
-            console.log(error);
             setError("Something went wrong...")
         } finally{
             setIsLoading(false);
