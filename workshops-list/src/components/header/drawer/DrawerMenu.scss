@@ -1,0 +1,30 @@
+.mobile-drawer{
+    display: flex;
+    flex-direction: column;
+    .links-item{
+        color:$color-primary;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        svg{
+            padding: 0 10px;
+        }
+        &:hover {
+            color: $color-accent;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.mobile-drawer-close{
+    color:$color-primary;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}

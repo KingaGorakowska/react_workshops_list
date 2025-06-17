@@ -1,0 +1,14 @@
+.layout-footer{
+    position: relative;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+    ), url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-color: $color-background; 
+    overflow-x: hidden;
+    height: clamp(50px, 15vw, 120px);
+}

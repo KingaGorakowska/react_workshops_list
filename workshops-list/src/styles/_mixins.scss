@@ -1,0 +1,18 @@
+@mixin heading-style {
+  color: $heading-color;
+  font-size: $heading-font-size;
+  font-weight: $heading-font-weight;
+  margin-bottom: 0.8rem;
+  padding: 60px 0 5px 0;
+}
+
+@mixin animated-underline {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background-color: $color-accent;
+      transition: width 0.3s ease;
+}

@@ -1,0 +1,106 @@
+.layout-header{
+    position: relative;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ), url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-color: $color-background; 
+    overflow-x: hidden;
+}
+
+.header{
+    max-width: 1600px; 
+    width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: clamp(50px, 15vw, 120px);
+    font-size: 1.125rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+    @media (max-width: 480px) {
+        padding: 0 10px;
+        font-size: 0.9rem;
+        height: 60px;
+    }
+
+    &-home{
+        cursor: pointer;
+        padding: 0 20px;
+        color:$color-secondary;
+        position: relative;
+        &::after {
+            @include animated-underline
+        }
+        &:hover {
+            color: $color-accent;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &-links{
+        display: flex;
+    }
+
+    &-items{
+        display: flex;
+        flex-wrap: wrap;
+
+        .links-item{
+            display: inline-block;
+            padding: 0 20px;
+            color:$color-secondary;
+            cursor: pointer;
+            position: relative;
+            &::after {
+                @include animated-underline
+            }
+            &:hover {
+                color: $color-accent;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes rumble {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.rumble {
+  animation: rumble 0.4s ease;
+}
+
+.mobile-nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .burger-icon{
+        color:$color-secondary;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+
+}
+

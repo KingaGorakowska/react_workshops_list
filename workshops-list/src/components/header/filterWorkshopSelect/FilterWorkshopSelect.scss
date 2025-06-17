@@ -1,0 +1,37 @@
+.filters-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .select-filters {
+        padding: 0.75rem 1rem;
+        border: 1px solid $color-muted;
+        border-radius: 3px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $color-primary;
+        background-color: $color-accent;
+        transition: border-color 0.3s ease;
+        &:focus {
+            outline: none;
+            border-color: $color-accent;
+            box-shadow: 0 0 0 3px rgba(200, 180, 106, 0.2);
+        }
+
+        &:hover {
+            border-color: $color-accent;
+            cursor: pointer;
+        }
+    
+        @media (max-width: 768px) {
+             width: calc(50% - 0.5rem);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+            font-size: 0.9rem;
+        }
+    }
+}

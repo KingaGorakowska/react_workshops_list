@@ -1,0 +1,107 @@
+@import './variables';
+@import './mixins';
+@import '../../src/components/header/navbar/Navbar.scss';
+@import '../components/workshops-item/WorkshopItem.scss';
+@import '../pages/FavoritePage.scss';
+@import '../pages/HomePage.scss';
+@import '../components/workshops-list/WorkshopsList.scss';
+@import '../components/header/drawer/DrawerMenu.scss';
+@import '../components/header/filterWorkshopSelect/FilterWorkshopSelect.scss';
+@import '../components/footer/Footer.scss';
+@import '../pages/WorkshopsPage.scss';
+
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: $color-background;
+  font-family: $font-stack;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-primary;
+  text-align: left;
+  min-height: 100vh;
+  position: relative;
+   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $color-accent;
+  border-radius: 5px;
+}
+
+.container{
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $gutter;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 10px;
+  }
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -$gutter;
+}
+
+.col {
+  padding: 0 $gutter;
+  box-sizing: border-box;
+  flex: 1 0 0%;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: (100% / $columns) * $i;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    width: 100% !important;
+  }
+}
+
+
+h1 {
+  @include heading-style;
+}
+
+h2 {
+  font-size: 2rem;
+  color: $color-accent;
+  position: relative;
+  margin-bottom: 60px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 60px;
+    background-color: $color-accent;
+  }
+}
+
+ @media (max-width: 768px) {
+    h1{
+      font-size: 39px;
+      font-weight: 700;
+      padding: 30px 0 5px 0;
+    }
+
+    h2{
+      font-size: 18px;
+    }
+ }
