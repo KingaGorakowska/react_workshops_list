@@ -15,7 +15,7 @@ const WorkshopsPage = () => {
 const [searchParams, setSearchParams] = useSearchParams();
 const currentPage = Number(searchParams.get("page")); 
 const {workshops, isLoading, error, total, totalPages, filters} = useWorkshops(currentPage);
-const {allWorkshops, errorMessage} = useAllWorkshops();
+const {allWorkshops} = useAllWorkshops();
 console.log(workshops, isLoading, error, total, totalPages, filters);
 console.log(allWorkshops, "allWorkshops");
 
@@ -43,7 +43,7 @@ useEffect(()=>{
     }
 },[searchParams,setSearchParams]);
 
-const handleChange = (event:React.ChangeEvent<any>,value:number) => {
+const handleChange = (_:any,value:number) => {
 
     setSearchParams({page:value.toString()})
 };
