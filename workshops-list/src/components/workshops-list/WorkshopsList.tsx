@@ -18,7 +18,7 @@ const WorkshopsList:React.FC<WorkshopsListProps> = ({workshops, isLoading, error
                 ) : (
                 <div>
                     {error ? (
-                    <h3>{error}</h3>
+                    <h3 className="error-message">{error}</h3>
                     ) : (
                     <div className="workshops-grid">
                         {!workshops || workshops.length === 0 ? (

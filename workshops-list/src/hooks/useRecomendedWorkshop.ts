@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getRecommendedWorkshops} from "../../api/workshopsApi";
-import type { Workshop } from "../../types/types";
+import { getRecommendedWorkshops} from "../api/workshopsApi";
+import type { Workshop } from "../types/types";
 
 const useRecomendedWorkshop = () => {
 
@@ -19,7 +19,7 @@ useEffect( ()=>{
             setWorkshops(result.results);
                 
         } catch (error) {
-            setError("Something went wrong...")
+            setError("Oops! Something went wrong.")
         } finally{
             setIsLoading(false);
         }

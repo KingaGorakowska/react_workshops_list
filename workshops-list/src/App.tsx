@@ -31,9 +31,11 @@ const routes = [
     <>
       <Router>
           <Navbar/>
-          <Routes>
+          <div className="content">
+                <Routes>
                    {routes.map((r:any)=><Route path={r.path} element={r.element}/>)}
-          </Routes>
+                </Routes>
+          </div>
           <Footer/>
       </Router>
     </>

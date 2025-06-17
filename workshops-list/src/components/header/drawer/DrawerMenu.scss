@@ -9,9 +9,6 @@
         justify-content: center;
         align-items: center;
         padding: 10px 0;
-        svg{
-            padding: 0 10px;
-        }
         &:hover {
             color: $color-accent;
             &::after {

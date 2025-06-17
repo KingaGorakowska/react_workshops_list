@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getAll} from "../../api/workshopsApi";
-import type { Workshop } from "../../types/types";
+import { getAll} from "../api/workshopsApi";
+import type { Workshop } from "../types/types";
 
 const useAllWorkshops = () => {
 
@@ -17,7 +17,7 @@ useEffect( ()=>{
             setAllWorkshops(result.results);
                 
         } catch (error) {
-            setErrorMessage("Something went wrong...")
+            setErrorMessage("Oops! Something went wrong.")
         } 
 }
 fetchWorkshops();

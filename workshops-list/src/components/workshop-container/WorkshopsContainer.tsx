@@ -1,5 +1,5 @@
 import WorkshopsList from "../workshops-list/WorkshopsList";
-import useRecomendedWorkshop from "../hooks/useRecomendedWorkshop";
+import useRecomendedWorkshop from "../../hooks/useRecomendedWorkshop";
 
 
 const WorkshopContainer = () => {

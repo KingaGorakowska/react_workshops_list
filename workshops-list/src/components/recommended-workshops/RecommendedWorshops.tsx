@@ -1,4 +1,4 @@
-import useRecomendedWorkshop from "../hooks/useRecomendedWorkshop";
+import useRecomendedWorkshop from "../../hooks/useRecomendedWorkshop";
 import WorkshopsList from "../workshops-list/WorkshopsList";
 
 const RecommendedWorkshops = () => {

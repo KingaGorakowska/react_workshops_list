@@ -10,6 +10,34 @@
 @import '../components/footer/Footer.scss';
 @import '../pages/WorkshopsPage.scss';
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  background-color: $color-background;
+  color: $color-primary;
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   display: block;
   margin: 0;
@@ -23,7 +51,7 @@ body {
   text-align: left;
   min-height: 100vh;
   position: relative;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -52,6 +80,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -$gutter;
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 }
 
 .col {
@@ -69,6 +100,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 768px) {
   .col {
     width: 100% !important;
+    padding: 0 10px;
   }
 }
 
@@ -94,6 +126,12 @@ h2 {
   }
 }
 
+.error-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
  @media (max-width: 768px) {
     h1{
       font-size: 39px;
@@ -105,3 +143,8 @@ h2 {
       font-size: 18px;
     }
  }
+
+ img {
+  max-width: 100%;
+  height: auto;
+}

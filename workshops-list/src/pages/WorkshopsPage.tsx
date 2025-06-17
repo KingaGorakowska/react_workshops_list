@@ -1,12 +1,12 @@
 import Pagination from '@mui/material/Pagination';
-import useWorkshops from '../components/hooks/useWorkshops';
+import useWorkshops from '../hooks/useWorkshops';
 import { useSearchParams } from 'react-router-dom';
 import { useEffect, useMemo } from 'react';
 import WorkshopsList from '../components/workshops-list/WorkshopsList';
 import FilterWorkshopSelect from '../components/header/filterWorkshopSelect/FilterWorkshopSelect';
 import { useState } from 'react';
 import { filterWorkshops } from '../libs/filterWorkshops';
-import useAllWorkshops from '../components/hooks/useAllWorkshops';
+import useAllWorkshops from '../hooks/useAllWorkshops';
 
 
 
@@ -14,7 +14,7 @@ import useAllWorkshops from '../components/hooks/useAllWorkshops';
 const WorkshopsPage = () => {
 const [searchParams, setSearchParams] = useSearchParams();
 const currentPage = Number(searchParams.get("page")); 
-const {workshops, isLoading, error, total, totalPages, filters} = useWorkshops(currentPage);
+const {workshops, isLoading, error, totalPages, filters} = useWorkshops(currentPage);
 const {allWorkshops} = useAllWorkshops();
 
 const [filtersValues, setFiltersValues] = useState({

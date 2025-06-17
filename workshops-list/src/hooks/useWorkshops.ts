@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import {getAllWorkshops} from "../../api/workshopsApi";
-import type { Filters, Workshop } from "../../types/types";
+import {getAllWorkshops} from "../api/workshopsApi";
+import type { Filters, Workshop } from "../types/types";
 
 const useWorkshops = (currentPage:number) => {
 
@@ -33,7 +33,7 @@ useEffect( ()=>{
             });
             
         } catch (error) {
-            setError("Something went wrong...")
+            setError("Oops! Something went wrong.")
         } finally{
             setIsLoading(false);
         }
