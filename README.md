@@ -10,13 +10,6 @@ A modern web application built with React, TypeScript, and Vite, designed to dis
 
 React workshops list is a clean and responsive interface for discovering car workshops in the Wawer district of Warsaw, along with a curated list of recommended services retrieved from a secure, private API.
 
-The goal of this project was to:
-
-- Explore integration with multiple APIs (including secured/private APIs).
-
-- Build a clean, user-friendly UI using Material-UI.
-
-- Showcase proficiency in TypeScript, React, Redux Toolkit, and modern front-end tooling.
 
 ---  
 
