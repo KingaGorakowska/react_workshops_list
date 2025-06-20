@@ -75,5 +75,6 @@ cd workshops-list
 npm install
 
 - Run the app locally
+
 npm run dev
 
