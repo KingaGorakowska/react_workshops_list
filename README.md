@@ -33,11 +33,11 @@ React workshops list is a clean and responsive interface for discovering car wor
 
 ⭐ Add to favorites – users can manage a personalized list of preferred workshops:
 
-Add/remove individual workshops
+- Add/remove individual workshops
 
-Clear the entire favorites list
+- Clear the entire favorites list
 
-View favorites in a dedicated section
+- View favorites in a dedicated section
 
 📄 Pagination or infinite scroll to improve navigation through large workshop lists.
 
