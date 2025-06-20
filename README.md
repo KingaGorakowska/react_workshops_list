@@ -4,7 +4,7 @@ A modern web application built with React, TypeScript, and Vite, designed to dis
 
 🔗 Live preview: https://calm-klepon-4fab62.netlify.app/
 
-
+---
 
 ## 📌 About the Project
 
@@ -18,7 +18,7 @@ The goal of this project was to:
 
 - Showcase proficiency in TypeScript, React, Redux Toolkit, and modern front-end tooling.
 
-  
+---  
 
 ## ✨ Features
 
@@ -48,7 +48,7 @@ View favorites in a dedicated section
 
 📄 Pagination or infinite scroll to improve navigation through large workshop lists.
 
-
+---
 
 ## 🛠️ Technologies Used
 
