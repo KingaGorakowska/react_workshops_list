@@ -36,6 +36,16 @@ The goal of this project was to:
 
 🔎 Filtering and search functionality to help users quickly find relevant workshops.
 
+⭐ Add to favorites – users can manage a personalized list of preferred workshops:
+
+Add/remove individual workshops
+
+Clear the entire favorites list
+
+View favorites in a dedicated section
+
+📄 Pagination or infinite scroll to improve navigation through large workshop lists.
+
 
 ## 🛠️ Technologies Used
 
