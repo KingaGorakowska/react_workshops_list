@@ -2,7 +2,7 @@
 
 A modern web application built with React, TypeScript, and Vite, designed to display a list of car repair workshops. The app integrates with two APIs—one private and one public—to present both general and recommended auto service locations.
 
-###🔗 Live preview: https://calm-klepon-4fab62.netlify.app/
+🔗 Live preview: https://calm-klepon-4fab62.netlify.app/
 
 
 ## 📌 About the Project
