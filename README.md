@@ -5,6 +5,7 @@ A modern web application built with React, TypeScript, and Vite, designed to dis
 🔗 Live preview: https://calm-klepon-4fab62.netlify.app/
 
 
+
 ## 📌 About the Project
 
 React workshops list is a clean and responsive interface for discovering car workshops in the Wawer district of Warsaw, along with a curated list of recommended services retrieved from a secure, private API.
@@ -16,6 +17,7 @@ The goal of this project was to:
 - Build a clean, user-friendly UI using Material-UI.
 
 - Showcase proficiency in TypeScript, React, Redux Toolkit, and modern front-end tooling.
+
   
 
 ## ✨ Features
@@ -47,6 +49,7 @@ View favorites in a dedicated section
 📄 Pagination or infinite scroll to improve navigation through large workshop lists.
 
 
+
 ## 🛠️ Technologies Used
 
 Category	Stack
@@ -57,6 +60,9 @@ HTTP Client	Axios
 UI Components	Material-UI
 APIs	Public (open workshop listings)
 Private (recommended workshops)
+
+---
+
 
 ## 🚀 Getting Started
 ### 1. Clone the repo
