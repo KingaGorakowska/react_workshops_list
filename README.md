@@ -52,14 +52,18 @@ View favorites in a dedicated section
 
 ## 🛠️ Technologies Used
 
-Category	Stack
-Frontend Framework	React + Vite
-Language	TypeScript
-State Management	Redux Toolkit
-HTTP Client	Axios
-UI Components	Material-UI
-APIs	Public (open workshop listings)
-Private (recommended workshops)
+### Frontend
+- Framework: React + Vite
+- Language: TypeScript
+- Routing: React Router DOM
+- State Management: Redux Toolkit
+- Custom Hooks: For API handling, localStorage, and filtering logic
+- HTTP Client: Axios
+- UI Components: Material-UI
+  
+### APIs
+- Public: Open workshop listings (Wawer, Warsaw)
+- Private: Recommended workshops (secured, not publicly accessible)
 
 ---
 
