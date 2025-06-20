@@ -63,18 +63,18 @@ React workshops list is a clean and responsive interface for discovering car wor
 
 ## 🚀 Getting Started
 
-### Clone the repo
+### 1. Clone the repo
 
 ```bash
 git clone  https://github.com/KingaGorakowska/react_workshops_list.git
 
 cd workshops-list
 
-- Install dependencies
+- Install dependencies:
 
 npm install
 
-- Run the app locally
+- Run the app locally:
 
 npm run dev
 
