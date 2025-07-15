@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {getAllWorkshops} from "../api/workshopsApi";
+import {getAllWorkshopsByPage} from "../api/workshopsApi";
 import type { Filters, Workshop } from "../types/types";
 
 const useWorkshops = (currentPage:number) => {
@@ -20,7 +20,7 @@ useEffect( ()=>{
         setIsLoading(true);
         try {
 
-            const result = await getAllWorkshops(currentPage);
+            const result = await getAllWorkshopsByPage(currentPage);
             setWorkshops(result.results);
             setTotal(result.pagination.total);
             setTotalPages(result.pagination.totalPages);

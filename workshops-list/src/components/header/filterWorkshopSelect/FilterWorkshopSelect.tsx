@@ -3,7 +3,7 @@ import type { Filters } from "../../../types/types";
                 
 interface FilterWorkshopSelectProps{
     filters:Filters|null;
-    handleOnChange:(key:any, value:any)=>void,
+    handleOnChange:(key:string,value:string|number)=>void,
 };
 
 const FilterWorkshopSelect :React.FC<FilterWorkshopSelectProps>= ({filters,handleOnChange}) => {

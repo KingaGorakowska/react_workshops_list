@@ -18,7 +18,7 @@ const WorkshopItem : React.FC<WorkshopItemProps> = ({workshop}) => {
     const dispatch = useDispatch();
     const [animate, setAnimate] = useState(false);
 
-    const favoriteWorkshops = useSelector((state: RootState) => state.favoriteWorkshopSlice.favoriteWorkshops);
+    const {favoriteWorkshops} = useSelector((state:RootState)=>state.favoriteWorkshopSlice);
     const isFavorite = favoriteWorkshops.some(item => item.name === workshop.name);
 
     const toggleFavorite = () => {

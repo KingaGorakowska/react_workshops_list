@@ -22,7 +22,7 @@ const WorkshopsList:React.FC<WorkshopsListProps> = ({workshops, isLoading, error
                     ) : (
                     <div className="workshops-grid">
                         {!workshops || workshops.length === 0 ? (
-                        <h3>{isFavorite === true ? "You haven't added any favorite workshops yet.":"There is no workshops."}</h3>
+                        <h3>{isFavorite ? "You haven't added any favorite workshops yet.":"There is no workshops."}</h3>
                         ) : (
                         workshops.map((w: Workshop,index:number) => <WorkshopItem key={index} workshop={w} />)
                         )}

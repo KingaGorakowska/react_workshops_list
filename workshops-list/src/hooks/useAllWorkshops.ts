@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAll} from "../api/workshopsApi";
+import { getAllWorkshops} from "../api/workshopsApi";
 import type { Workshop } from "../types/types";
 
 const useAllWorkshops = () => {
@@ -13,7 +13,7 @@ useEffect( ()=>{
 
         try {
 
-            const result = await getAll();
+            const result = await getAllWorkshops();
             setAllWorkshops(result.results);
                 
         } catch (error) {

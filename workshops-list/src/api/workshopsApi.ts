@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export const getAllWorkshops = async (page:number) => {
+export const getAllWorkshopsByPage = async (page:number) => {
 
     console.log(page);
     try {
@@ -27,7 +27,7 @@ export const getRecommendedWorkshops = async () => {
 
 };
 
-export const getAll = async () => {
+export const getAllWorkshops = async () => {
     try {
 
         const res = await axios.get(`https://motointegrator.com/api/search/v4/workshop?districts=wawer&locale=en&market=PL&page=${1}&perPage=81&query=warszawa`);

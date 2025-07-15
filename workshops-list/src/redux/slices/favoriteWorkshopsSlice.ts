@@ -1,8 +1,9 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import type { Workshop } from "../../types/types";
 
 interface initialStateType{
 
-    favoriteWorkshops : any[];
+    favoriteWorkshops : Workshop[];
     
 }
 
